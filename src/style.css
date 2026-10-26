@@ -75,3 +75,65 @@ body {
   line-height: 1.6;
   color: #444;
 }
+.flashcard-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0 30px;
+}
+
+.flashcard-form label {
+  font-weight: bold;
+}
+
+.flashcard-form input,
+.flashcard-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 1rem;
+}
+
+.flashcard-form textarea {
+  resize: vertical;
+}
+
+.flashcard-form button {
+  align-self: flex-start;
+}
+
+.menu-btn {
+  min-height: 44px;
+  font: inherit;
+}
+
+.menu-btn:focus-visible,
+.flashcard-form input:focus-visible,
+.flashcard-form textarea:focus-visible {
+  outline: 3px solid #245f60;
+  outline-offset: 3px;
+}
+
+#flashcardList {
+  margin-top: 15px;
+}
+
+.study-card {
+  padding: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.study-card h4 {
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+
+.study-card p {
+  margin-top: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
